@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TicTacToe\TicTacToe.csproj">
-      <Project>{e7ca265a-e248-4b33-bbb2-9c607565b63c}</Project>
-      <Name>TicTacToe</Name>
+    <ProjectReference Include="..\App\App.csproj">
+      <Project>{929dc3a1-5262-4f52-86a4-56a70a92a9f1}</Project>
+      <Name>App</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

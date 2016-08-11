@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using App;
 
 namespace TicTacToe
 {
@@ -10,7 +11,11 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
-            Class1 
+            Class1 input = new Class1();
+
+            input.GetDisplay();
+            Console.ReadLine();
+
              
         }
     }
