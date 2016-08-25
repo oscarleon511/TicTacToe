@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestTicTacToe", "UnitTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{929DC3A1-5262-4F52-86A4-56A70A92A9F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerVsComputer", "PlayerVsComputer\PlayerVsComputer.csproj", "{5C6159D4-74B1-4F31-AA3B-E5939773CFAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{929DC3A1-5262-4F52-86A4-56A70A92A9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929DC3A1-5262-4F52-86A4-56A70A92A9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929DC3A1-5262-4F52-86A4-56A70A92A9F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C6159D4-74B1-4F31-AA3B-E5939773CFAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6159D4-74B1-4F31-AA3B-E5939773CFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6159D4-74B1-4F31-AA3B-E5939773CFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6159D4-74B1-4F31-AA3B-E5939773CFAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

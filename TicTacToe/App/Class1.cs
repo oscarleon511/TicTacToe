@@ -18,10 +18,19 @@ namespace App
             Console.WriteLine();
             while (count < 9)
             {
+                
+                //if (the game is win for either player then exit)
+
                 //Get value from Player One
-               if( MoveForPlayer1())
+               if(MoveForPlayer1()==false)
                {
                    break;
+               }
+               //if(game is a tie) then exit
+               else if(count == 9 && CheckForWin("X")== false)
+               {
+                   Console.WriteLine("This is a tie");
+                   return;
                }
 
                 
@@ -68,6 +77,7 @@ namespace App
                 
                 } while (makemove);
                 
+                
             }
             
 
@@ -98,7 +108,7 @@ namespace App
         {
 
 
-            Console.Write("{0} {1} {2} \n{3} {4} {5} \n{6} {7} {8}\n", numbersentered[0], numbersentered[1], numbersentered[2], numbersentered[3], numbersentered[4], numbersentered[5], numbersentered[6], numbersentered[7], numbersentered[8]);
+            Console.Write("  --- --- ---\n | {0} | {1} | {2} |\n  --- --- ---\n | {3} | {4} | {5} |\n  --- --- ---\n | {6} | {7} | {8} |\n  --- --- ---\n", numbersentered[0], numbersentered[1], numbersentered[2], numbersentered[3], numbersentered[4], numbersentered[5], numbersentered[6], numbersentered[7], numbersentered[8]);
                 
                        
             
@@ -118,6 +128,7 @@ namespace App
                     didwin = true;
                     
                 }
+                
             }
             return didwin;
             
@@ -145,7 +156,7 @@ namespace App
            int inputPlayerOne = 0;
            if (!int.TryParse(inputone, out inputPlayerOne))
            {
-               MoveForPlayer1();
+               return MoveForPlayer1();
            }
             //Is this number is a valid input, value between 1 and 9?
              else if (inputPlayerOne > 0 && inputPlayerOne < 10)
@@ -159,14 +170,21 @@ namespace App
                         if (CheckForWin("X"))
                         {
                             Console.WriteLine("Player one wins");
-                            return comeback;
-                          
-
-                        }
-                        else
-                        {
                             comeback = false;
-}
+                           
+                         }
+                        //The line below is the same thing as the following
+                    //if(CheckForWin("X"))
+                    //{
+                    //Console.WriteLine("Player one wins");
+                    //comeback = false;
+                    //}
+                    //else
+                    //{
+                    //comeback = false;
+                     //}
+                            
+                             
                    
                     
                 }
@@ -174,6 +192,7 @@ namespace App
                 {
                     Console.WriteLine("Please try again!!!");
                     MoveForPlayer1();
+                    comeback = true;
                 }
 
             }
@@ -181,6 +200,7 @@ namespace App
             {
                 Console.WriteLine("Please try again!!!");
                 MoveForPlayer1();
+                comeback = true;
 
             }
            return comeback;
